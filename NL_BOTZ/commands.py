@@ -116,7 +116,7 @@ async def start(client, message):
         reply_markup = InlineKeyboardMarkup(buttons)        
         await message.reply_photo(
             photo=random.choice(PICS),
-            text=START_TXT,
+            caption=START_TXT,
             reply_markup=reply_markup,
             parse_mode='html'
         )
